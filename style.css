@@ -1,29 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #cacaca;
     border-radius: 50px;
 }
 h1{
     font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 10px;
 }
-#quote-container {
+.container{
     text-align: center;
     max-width: 900px;
     padding: 50px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
 }
-
-#quote {
-    margin-bottom: 50px;
-    font-size: 30px;
+.text-area{
+    text-align: center;
+    font-size: 25px;
+    color: darkslategray;
+    line-height: 1.5;
+}
+.content .author{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00a7b3;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+#quote-btn {
+    margin: 30px;
+    font-size: 20px;
 }
 
 button {
@@ -34,7 +53,6 @@ button {
     color: #fff;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
     width: 40%;
     transition: all .9s;
     height: 50px;
@@ -42,14 +60,12 @@ button {
 }
 
 button:hover {
-    content: "s";
     background-color: #0056b3;
-    width: 90%;
+    width: 70%;
     transition: all .8s;
-    height: 90px;
-   border-radius: 0;
-   color: gainsboro;
-   font-size: 25px;
 }
 
+p{
+    color: #27cbcb;
+}
 

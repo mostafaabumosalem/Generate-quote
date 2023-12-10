@@ -7,12 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="quote-container">
+  <div class="container">
+    <div class="header">
         <h1>Quote of the Day</h1>
-        <p id="quote">Press the button below to recieve a random quote!</p>
-      
-    <button id="generateButton" onclick="generateQuote()">New Quote</button>
-</div>
+    </div>
+    <div class="content">
+        <div class="text-area">
+            <span class="quote">
+                <p>Press the button below to recieve a random quote!</p>
+            </span>
+            <div class="author"></div>
+            <div class="button-area">
+                <div class="btn">
+                    <button id="quote-btn">New Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
     <script src="js/index.js"></script>
 </body>
 </html>

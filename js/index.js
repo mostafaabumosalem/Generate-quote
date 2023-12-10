@@ -1,22 +1,34 @@
 
 const quotes = [
-    ` " The only way to do great work is to love what you do." -- Steve Jobs `,
-    ` " Life is what happens when you're busy making other plans." -- John Lennon ` ,
-    ` " You only live once, but if you do it right, once is enough." -- Mae West `,
-    ` " Success is not final, failure is not fatal: It is the courage to continue that counts." -- Winston Churchill`,
-    ` " The future belongs to those who believe in the beauty of their dreams." -- Eleanor Roosevelt`,
-    ` " In three words I can sum up everything I've learned about life: it goes on." -- Robert Frost`
+    {'author': '--Jim Rohn', 
+     'quote': '"Beware of what you become in pursuit of what you want."'
+    },
+    {'author': '--Steve Jobs', 
+     'quote': '"The only way to do great work is to love what you do."'
+    },
+    {'author': '--Frank Sinatra', 
+     'quote': '"The best revenge is massive success."'
+    },
+    {'author': '--Wayne Gretzy', 
+     'quote': '"You miss 100% of the shots you don\'t take."'
+    },
+    {'author': '--Nelson Mandela', 
+     'quote': '"Resentment is like drinking poison and waiting for your enemies to die."'
+    },
+    {'author': '--Robert Frost', 
+     'quote': '"In three words I can sum up everything I have learned about life: it goes on."'
+    },
 ];
 
-function generateQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    const quoteElement = document.getElementById("quote");
-    const generateButton = document.getElementById("generateButton");
+var btn = document.querySelector("#quote-btn");
+var quote = document.querySelector(".quote");
+var author = document.querySelector(".author");
 
-    setTimeout(() => {
-        quoteElement.textContent = quotes[randomIndex];
-        // Fade in the new quote
-        // quoteElement.style.opacity = 1;
-    }, 200);
+btn.addEventListener("click", function () {
+    var random = Math.trunc(Math.random() * quotes.length);
+    quote.innerHTML= quotes[random].quote;
+    author.innerHTML= quotes[random].author;
+} )
 
-}
+
+
